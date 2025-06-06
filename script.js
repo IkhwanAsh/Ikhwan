@@ -1,38 +1,38 @@
 const typedText = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
-const words = ["Web Developer", "Designer", "Computer Sains"];
+const words = ["Web Developer", "Designer", "Computer Scientist"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-let typingDelay = 100;
-let erasingDelay = 60;
-let newWordDelay = 1500;
+const typingSpeed = 120;
+const erasingSpeed = 60;
+const delayBetweenWords = 1500;
 
-function type() {
+function typeEffect() {
   const currentWord = words[wordIndex];
-  if (isDeleting) {
-    typedText.textContent = currentWord.substring(0, charIndex - 1);
-    charIndex--;
-    if (charIndex === 0) {
-      isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length;
-      setTimeout(type, typingDelay);
-    } else {
-      setTimeout(type, erasingDelay);
-    }
-  } else {
+  if (!isDeleting) {
     typedText.textContent = currentWord.substring(0, charIndex + 1);
     charIndex++;
-    if (charIndex === currentWord.length) {
-      isDeleting = true;
-      setTimeout(type, newWordDelay);
+    if (charIndex < currentWord.length) {
+      setTimeout(typeEffect, typingSpeed);
     } else {
-      setTimeout(type, typingDelay);
+      isDeleting = true;
+      setTimeout(typeEffect, delayBetweenWords);
+    }
+  } else {
+    typedText.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex > 0) {
+      setTimeout(typeEffect, erasingSpeed);
+    } else {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      setTimeout(typeEffect, 300);
     }
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  if (words.length) setTimeout(type, newWordDelay);
+  if (words.length) setTimeout(typeEffect, 1000);
 });
