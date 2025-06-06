@@ -99,6 +99,28 @@ header {
   margin-bottom: 10px;
 }
 
+.typed-text-container {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: green;
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: green;
+  width: 2px;
+  height: 1.5rem;
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.1%, 100% { opacity: 0; }
+}
+
+
 .card p, .card li, a {
   color: #ffffff;
   font-size: 1.05em;
