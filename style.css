@@ -20,28 +20,32 @@ body {
 .side-menu {
   position: fixed;
   top: 0;
-  left: -260px;
-  width: 240px;
+  left: -250px;
+  width: 220px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  box-shadow: 2px 0 20px rgba(0,0,0,0.3);
-  transition: left 0.35s ease;
+  background: url('img/menu-wallpaper.jpg') no-repeat center center;
+  background-size: cover;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  padding-top: 60px;
+  transition: left 0.3s ease-in-out;
   z-index: 1500;
-  border-right: 1px solid rgba(255,255,255,0.2);
+  color: #fff; /* Supaya teks kelihatan di atas gambar */
 }
 
-.side-menu.open {
-  left: 0;
+.side-menu ul li a {
+  color: #fff; /* Warna teks menu */
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); /* Tambah kontras dengan bayangan */
 }
 
 .menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding: 0 20px;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
+
 
 .menu-header h2 {
   color: #fff;
