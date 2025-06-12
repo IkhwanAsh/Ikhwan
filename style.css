@@ -16,6 +16,74 @@ body {
   padding: 30px 15px;
 }
 
+/* Estetik Menu Side */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 2px 0 20px rgba(0,0,0,0.3);
+  transition: left 0.35s ease;
+  z-index: 1500;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.menu-header h2 {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.close-btn {
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-menu li {
+  padding: 15px 20px;
+  transition: background 0.2s ease;
+}
+
+.side-menu li:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.side-menu a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.side-menu a i {
+  margin-right: 12px;
+  font-size: 1.2rem;
+}
+
+
 .container {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
