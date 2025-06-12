@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Portofolio pribadi Ikhwan Ashshafa - Web Developer" />
   <title>Portofolio - Ikhwan Ashshafa</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+  <!-- Ganti YOUR_KIT_ID dengan ID dari FontAwesome jika kamu memakainya -->
 </head>
 <body>
   <!-- Hamburger Menu -->
-<div class="hamburger" onclick="toggleMenu()">
-  <i class="fas fa-bars"></i>
-</div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
 
-<!-- Navigasi Samping -->
-<nav class="side-menu" id="sideMenu">
-  <ul>
-    <li><a href="CV.html" onclick="toggleMenu()">My CV</a></li>
-    <section class="card about" id="tentang"></section>
-    <li><a href="career.html" onclick="toggleMenu()">My Journey</a></li>
-    <section class="card skills" id="keahlian"></section>
-    <li><a href="born.html" onclick="toggleMenu()">Born</a></li>
-    <section class="card contact" id="kontak">
-  </ul>
-</nav>
+  <!-- Navigasi Samping -->
+  <nav class="side-menu" id="sideMenu">
+    <ul>
+      <li><a href="CV.html" onclick="toggleMenu()">My CV</a></li>
+      <li><a href="career.html" onclick="toggleMenu()">My Journey</a></li>
+      <li><a href="born.html" onclick="toggleMenu()">Born</a></li>
+    </ul>
+  </nav>
 
   <div class="container">
     <!-- Header -->
@@ -44,13 +41,13 @@
     </header>
 
     <!-- Tentang -->
-    <section class="card about">
+    <section class="card about" id="tentang">
       <h2>👋 Tentang Saya</h2>
       <p>Saya adalah Web Developer yang berdedikasi untuk mengubah ide menjadi aplikasi web fungsional dan estetis. Dengan keahlian di frontend dan backend, saya fokus menciptakan solusi yang tidak hanya menarik secara visual, tapi juga responsif dan efisien.</p>
     </section>
 
     <!-- Keahlian -->
-    <section class="card skills">
+    <section class="card skills" id="keahlian">
       <h2>💼 Keahlian Utama</h2>
       <p>Saya menguasai berbagai teknologi yang membantu saya mengembangkan aplikasi web modern dan andal:</p>
       <ul>
@@ -61,7 +58,7 @@
     </section>
 
     <!-- Kontak -->
-    <section class="card contact">
+    <section class="card contact" id="kontak">
       <h2>📫 Hubungi Saya</h2>
       <div class="contact-item">
         <img src="email.png" alt="Email Icon" class="icon" />
@@ -73,10 +70,11 @@
       </div>
     </section>
   </div>
+
   <script>
-  function toggleMenu() {
-    document.getElementById("sideMenu").classList.toggle("open");
-  }
-</script>
+    function toggleMenu() {
+      document.getElementById("sideMenu").classList.toggle("open");
+    }
+  </script>
 </body>
 </html>
