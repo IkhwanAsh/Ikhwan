@@ -6,6 +6,26 @@
   <title>My Journey - Ikhwan Ashshafa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -42,6 +62,19 @@
     <section class="card timeline">
       <h2>🚀 Misi Pribadi</h2>
       <p>Saya ingin terus belajar dan berkembang menjadi pengembang web profesional yang bisa menciptakan solusi digital berdampak positif bagi masyarakat.</p>
+    </section>
+
+    <!-- Galeri Foto Kenangan -->
+    <section class="card timeline">
+      <h2>📸 Kenangan</h2>
+      <p>Beberapa momen penting yang telah menjadi bagian dari perjalanan saya:</p>
+      <div class="gallery">
+        <img src="img/kenangan1.jpg" alt="Kenangan 1">
+        <img src="img/kenangan2.jpg" alt="Kenangan 2">
+        <img src="img/kenangan3.jpg" alt="Kenangan 3">
+        <img src="img/kenangan4.jpg" alt="Kenangan 4">
+        <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+      </div>
     </section>
   </div>
 </body>
