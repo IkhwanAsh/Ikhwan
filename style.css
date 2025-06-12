@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('wallpaper website.avif') no-repeat center center fixed;
+  background: url('wallpaper\ website.avif') no-repeat center center fixed;
   background-size: cover;
   color: #f0f0f5;
   min-height: 100vh;
@@ -25,6 +25,67 @@ body {
   box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   backdrop-filter: blur(10px);
 }
+
+/* Hamburger Icon */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2000;
+  color: #333;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  padding-top: 60px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1500;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.side-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  display: block;
+}
+
+/* Optional: blur background when menu opens */
+body.menu-open::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index: 1400;
+}
+
 
 /* Header */
 .header {
