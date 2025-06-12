@@ -7,17 +7,6 @@ let letter = "";
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("sideMenu");
-    menu.classList.toggle("open");
-
-    // Optional: blur latar belakang
-    document.body.classList.toggle("menu-open");
-  }
-</script>
-
-
 (function type(){
   if(count === texts.length) count = 0;
   currentText = texts[count];
