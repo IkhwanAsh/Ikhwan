@@ -23,14 +23,15 @@ body {
   left: -250px;
   width: 220px;
   height: 100%;
-  background: url('wp3.jpg') no-repeat center center;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('wp3.jpg') no-repeat center center;
   background-size: cover;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   padding-top: 60px;
   transition: left 0.3s ease-in-out;
   z-index: 1500;
-  color: #fff; /* Supaya teks kelihatan di atas gambar */
+  color: #fff;
 }
+
 
 .side-menu ul li a {
   color: #fff; /* Warna teks menu */
