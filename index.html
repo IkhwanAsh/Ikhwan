@@ -9,9 +9,26 @@
   <title>Portofolio - Ikhwan Ashshafa</title>
 
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Hamburger Menu -->
+<div class="hamburger" onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+
+<!-- Navigasi Samping -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="CV.html" onclick="toggleMenu()">My CV</a></li>
+    <section class="card about" id="tentang"></section>
+    <li><a href="career.html" onclick="toggleMenu()">My Journey</a></li>
+    <section class="card skills" id="keahlian"></section>
+    <li><a href="born.html" onclick="toggleMenu()">Born</a></li>
+    <section class="card contact" id="kontak">
+  </ul>
+</nav>
+
   <div class="container">
     <!-- Header -->
     <header class="header">
@@ -56,5 +73,10 @@
       </div>
     </section>
   </div>
+  <script>
+  function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("open");
+  }
+</script>
 </body>
 </html>
