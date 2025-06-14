@@ -38,6 +38,7 @@
 </nav>
 
 
+
   <div class="container">
     <!-- Header -->
     <header class="header">
@@ -89,10 +90,10 @@
     document.body.classList.toggle("menu-open");
   }
 
-  // Tutup menu saat salah satu item diklik
-  const menuLinks = document.querySelectorAll('.menu-link');
-  menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
+  // Aktifkan fungsi klik untuk setiap item menu
+  document.querySelectorAll(".menu-link").forEach(link => {
+    link.addEventListener("click", function () {
+      // Tutup menu setelah klik
       document.getElementById("sideMenu").classList.remove("open");
       document.body.classList.remove("menu-open");
     });
