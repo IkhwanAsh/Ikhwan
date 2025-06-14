@@ -285,6 +285,12 @@ body.menu-open::before {
   transform: scale(1.15);
 }
 
+.hamburger:hover span {
+  background-color: #00ffc8; /* Warna highlight saat hover */
+  box-shadow: 0 0 10px #00ffc8;
+}
+
+
 /* Card */
 .card {
   background: rgba(255,255,255,0.15);
