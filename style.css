@@ -100,59 +100,67 @@ body {
 }
 
 /* Hamburger Icon */
-/* Hamburger Menu Style */
 .hamburger {
-  width: 35px;
-  height: 28px;
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 1001;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  z-index: 999;
   cursor: pointer;
 }
 
-.hamburger span {
-  height: 4px;
-  background: #fff;
-  border-radius: 4px;
-  transition: all 0.4s ease;
+.hamburger-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
 }
 
-/* Animasi ketika menu terbuka */
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+/* Efek ketika menu terbuka */
+.menu-open .hamburger-icon {
+  transform: rotate(90deg);
 }
 
-/* Side menu */
+/* Navigasi Slide */
 .side-menu {
   position: fixed;
   top: 0;
   left: -250px;
   width: 250px;
   height: 100%;
-  background: #222;
+  background: #1f1f2e;
   color: #fff;
-  padding: 30px 20px;
-  transition: left 0.4s ease;
-  z-index: 1000;
+  padding: 20px;
+  transition: left 0.4s ease-in-out;
+  z-index: 998;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
 }
+
 .side-menu.open {
   left: 0;
 }
-.side-menu .menu-header {
+
+.menu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.menu-header h2 {
+  font-size: 1.5rem;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/* Tambahan Blur Background saat menu terbuka */
+.menu-open .container,
+.menu-open header,
+.menu-open section {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
+
 .side-menu ul {
   list-style: none;
   padding: 0;
