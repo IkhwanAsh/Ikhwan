@@ -114,6 +114,45 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* Hamburger Container */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1001;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Garis-garis */
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+/* Animasi saat menu terbuka */
+.menu-open .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-open .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
 /* Efek ketika menu terbuka */
 .menu-open .hamburger-icon {
   transform: rotate(90deg);
