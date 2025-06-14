@@ -100,52 +100,75 @@ body {
 }
 
 /* Hamburger Icon */
+/* Hamburger Menu Style */
 .hamburger {
+  width: 35px;
+  height: 28px;
   position: fixed;
   top: 20px;
   left: 20px;
-  font-size: 28px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   cursor: pointer;
-  z-index: 2000;
-  color: #333;
 }
 
-/* Side Menu */
+.hamburger span {
+  height: 4px;
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+/* Animasi ketika menu terbuka */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Side menu */
 .side-menu {
   position: fixed;
   top: 0;
   left: -250px;
-  width: 220px;
+  width: 250px;
   height: 100%;
-  background-color: #ffffff;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-  padding-top: 60px;
-  transition: left 0.3s ease-in-out;
-  z-index: 1500;
+  background: #222;
+  color: #fff;
+  padding: 30px 20px;
+  transition: left 0.4s ease;
+  z-index: 1000;
 }
-
 .side-menu.open {
   left: 0;
 }
-
+.side-menu .menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .side-menu ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
-
-.side-menu li {
-  padding: 15px 20px;
-  border-bottom: 1px solid #eee;
+.side-menu ul li {
+  margin: 20px 0;
 }
-
 .side-menu a {
+  color: #fff;
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-  display: block;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
 
 /* Optional: blur background when menu opens */
 body.menu-open::before {
