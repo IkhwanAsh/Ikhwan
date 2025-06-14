@@ -84,17 +84,20 @@
   </div>
 
   <script>
-    function toggleMenu() {
-      document.getElementById("sideMenu").classList.toggle("open");
-    }
-  </script>
-</body>
-  <script>
   function toggleMenu() {
-    const menu = document.getElementById("sideMenu");
-    menu.classList.toggle("open");
+    document.getElementById("sideMenu").classList.toggle("open");
     document.body.classList.toggle("menu-open");
   }
+
+  // Tutup menu saat salah satu item diklik
+  const menuLinks = document.querySelectorAll('.menu-link');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById("sideMenu").classList.remove("open");
+      document.body.classList.remove("menu-open");
+    });
+  });
 </script>
+
 
 </html>
