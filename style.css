@@ -13,14 +13,19 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
+  flex-wrap: wrap;
+  justify-content: center; /* pusatkan horizontal */
+  align-items: center;
+  padding: 15px 20px;
   background-color: rgb(121, 57, 4);
   color: white;
   position: sticky;
   top: 0;
   z-index: 100;
+  text-align: center;
+  gap: 20px;
 }
+
 
 .navbar .logo {
   font-weight: bold;
