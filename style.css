@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: rgb(121, 57, 4);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar nav ul li {
+  margin-left: 20px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: #00bcd4;
+}
+
+.hero {
+  background: url('wp\ estetik.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* agar full tinggi layar */
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  margin-bottom: 20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #00fff7;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  color: #00fff7;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: #00fff7;
+  padding: 10px 25px;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #00e0d2;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.keahlian ul li {
+  margin: 10px 0;
+}
+
+.proyek-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgb(121, 57, 4);
+  color: white;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .proyek-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.proyek-foto {
+  padding: 80px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.proyek-foto h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.proyek-foto-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.foto-item {
+  width: 280px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.foto-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+    .kontak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.kontak h2 {
+  margin-bottom: 30px;
+}
+
+.kontak-info {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* memastikan isi ada di tengah horizontal */
+  gap: 10px; /* jarak antara ikon dan teks */
+  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.15); /* efek background transparan */
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: fit-content;
+  transition: transform 0.3s ease;
+}
+
+.kontak-info:hover {
+  transform: scale(1.05);
+}
+
+.kontak-info img {
+  width: 50px;
+  height: 40px;
+}
+
+.kontak-info span {
+  font-size: 18px;
+  color: black; /* ubah sesuai tema, bisa pakai white juga */
+}
+
+
+.nama-animasi {
+  animation: warnaBerganti 2s infinite alternate;
+  font-weight: bold;
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.2),
+    0 0 10px rgba(0, 123, 255, 0.4),
+    0 0 15px rgba(255, 44, 44, 0.6);
+}
+
+
+@keyframes warnaBerganti {
+  0% {
+    color: #007bff; /* biru */
+  }
+  100% {
+    color: #ff2c2c; /* merah */
+  }
+}
+
+
