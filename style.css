@@ -65,6 +65,29 @@ body {
   border-bottom: 2px solid #00fff7;
 }
 
+.navbar nav ul li a {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: #00fff7;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+
 
 .hero {
   background: url('wp\ estetik.jpg') no-repeat center center/cover;
