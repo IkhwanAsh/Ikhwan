@@ -381,14 +381,14 @@ footer {
   }
   100% {
 
-    section {
-  padding: 60px 20px;
-  text-align: center;
-  scroll-margin-top: 100px; /* penting: buat jarak atas saat klik menu */
+    html {
+  scroll-behavior: smooth;
 }
 
-    color: #ff2c2c; /* merah */
-  }
+section {
+  padding: 60px 20px;
+  text-align: center;
+  scroll-margin-top: 100px;
 }
 
 
