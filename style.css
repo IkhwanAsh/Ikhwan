@@ -59,6 +59,13 @@ body {
   color: #00bcd4;
 }
 
+.navbar nav ul li a.active {
+  color: #00fff7;
+  font-weight: bold;
+  border-bottom: 2px solid #00fff7;
+}
+
+
 .hero {
   background: url('wp\ estetik.jpg') no-repeat center center/cover;
   color: white;
