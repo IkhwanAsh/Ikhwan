@@ -29,8 +29,11 @@ body {
 
 .navbar .logo {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
+  flex-basis: 100%;
+  text-align: center;
 }
+
 
 .navbar nav ul {
   display: flex;
