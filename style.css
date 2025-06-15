@@ -173,12 +173,26 @@ footer {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  .proyek-container {
+@media (max-width: 600px) {
+  .kontak-info {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .kontak-info img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .kontak-info span {
+    font-size: 16px;
+    text-align: left;
+    word-break: break-word;
   }
 }
+
 
 .proyek-foto {
   padding: 80px 20px;
