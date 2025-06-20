@@ -5,10 +5,11 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background: #000; ;
-  color: #fff; 
+  background-color: #0e0e0e;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -417,8 +418,13 @@ footer {
 
 section {
   padding: 60px 20px;
-  text-align: center;
-  scroll-margin-top: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  margin-bottom: 40px;
 }
 
     .tentang, .keahlian {
@@ -432,47 +438,57 @@ section {
 }
 
 .judul-section {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #4a00e0;
   background: linear-gradient(to right, #8e2de2, #4a00e0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .isi-section {
-  font-size: 1.1em;
-  line-height: 1.6;
-  color: cream
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #ccc;
   text-align: justify;
 }
 
 .highlight {
-  color: #ff4e50;
+  color: #ff4dff;
   font-weight: bold;
 }
 
-.list-keahlian {
-  list-style: square;
-  padding-left: 20px;
+.list-keahlian li {
+  margin-bottom: 15px;
+  padding-left: 10px;
   font-size: 1.1em;
-  color: #444;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
 }
-
+    
 .list-keahlian li {
   margin-bottom: 10px;
   transition: transform 0.3s;
 }
 
 .list-keahlian li:hover {
-  transform: translateX(5px);
-  color: #4a00e0;
+  transform: scale(1.02);
+  color: #00f7ff;
 }
+
+    .icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #0ff;
+}
+
 
 .tebal {
   font-weight: bold;
-
+  color: #ffd700;
+}
   .teks-neon {
   font-size: 2.2em;
   font-weight: bold;
