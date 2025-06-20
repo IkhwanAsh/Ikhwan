@@ -522,28 +522,32 @@ section {
   }
 }
 
-    .with-image-bg {
-  background-image: url('wpbg.jpg'); /* Ganti path sesuai gambar kamu */
+   .with-image-bg {
+  background-image: url('img/keahlian.jpg'); /* pastikan file ini ADA */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  color: #fff;
-  position: relative;
-  z-index: 1;
+  background-attachment: fixed;
   padding: 60px 20px;
+  position: relative;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+  color: #fff;
+  overflow: hidden;
 }
 
 .with-image-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* Lapisan gelap agar teks tetap terbaca */
-  border-radius: 20px;
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.6); /* supaya teks terlihat */
+  z-index: 0;
 }
+
+.with-image-bg * {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* Pastikan isi tetap terbaca */
 .with-image-bg .judul-section,
