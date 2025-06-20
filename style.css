@@ -421,4 +421,58 @@ section {
   scroll-margin-top: 100px;
 }
 
+    .tentang, .keahlian {
+  padding: 40px 20px;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.judul-section {
+  font-size: 2em;
+  color: #4a00e0;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.isi-section {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+.highlight {
+  color: #ff4e50;
+  font-weight: bold;
+}
+
+.list-keahlian {
+  list-style: square;
+  padding-left: 20px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.list-keahlian li {
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.list-keahlian li:hover {
+  transform: translateX(5px);
+  color: #4a00e0;
+}
+
+.tebal {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+
 
