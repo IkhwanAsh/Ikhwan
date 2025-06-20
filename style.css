@@ -423,7 +423,8 @@ section {
 
     .tentang, .keahlian {
   padding: 40px 20px;
-  background-color: #fdfdfd;
+  background-color: #111;
+  color: #eee;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin: 30px auto;
