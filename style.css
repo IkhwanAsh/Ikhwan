@@ -444,7 +444,7 @@ section {
 .isi-section {
   font-size: 1.1em;
   line-height: 1.6;
-  color: #0ff !important
+  color: cream
   text-align: justify;
 }
 
@@ -476,7 +476,7 @@ section {
   .teks-neon {
   font-size: 2.2em;
   font-weight: bold;
-  color: #0ff !important; /* paksa warna neon */
+  color: cream; /* paksa warna neon */
   text-align: center;
   text-shadow:
     0 0 5px #0ff,
