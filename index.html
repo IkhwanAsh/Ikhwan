@@ -8,6 +8,181 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header.navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    .navbar nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      gap: 20px;
+    }
+
+    .navbar nav ul li a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+    }
+
+    .navbar nav ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 2px;
+      background: #00fff7;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar nav ul li a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .hero {
+      background: url('wp estetik.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-image {
+      margin-bottom: 20px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #00fff7;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h2.judul-section {
+      font-size: 2.5em;
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .with-image-bg {
+      background-image: url('img/keahlian.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .with-image-bg::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 0;
+    }
+
+    .with-image-bg * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .list-keahlian {
+      list-style: none;
+      padding: 0;
+    }
+
+    .list-keahlian li {
+      font-size: 1.2em;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .icon {
+      font-size: 1.4em;
+      color: #00fff7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -22,110 +197,40 @@
     </nav>
   </header>
 
- <section class="hero" id="beranda">
-  <div class="overlay"></div>
-  <div class="hero-content" data-aos="fade-up">
-    <div class="hero-image">
-      <img src="ikhwan.jpeg" alt="Foto Profil">
-    </div>
-    <h1>Halo, Saya <span class="nama-animasi">Ikhwan Ashshafa</span></h1>
-    <p>Mahasiswa | Web Developer | UI/UX Designer | Freelancer</p>
-    <a href="#kontak" class="btn">Hubungi Saya</a>
-  </div>
-</section>
-
-
-
-  <section class="tentang" id="tentang" data-aos="fade-up">
-  <h2 class="judul-section teks-neon">Tentang Saya</h2>
-  <p class="isi-section">
-    <strong>Just info...</strong> Saya adalah seseorang yang selalu mengedepankan <span class="highlight">karya</span>. 
-    Seorang <span class="highlight">Freelancer Website & Database</span> yang ingin bergabung dengan perusahaan untuk mendapatkan 
-    <span class="highlight">penghasilan tetap</span> dan berkembang bersama tim profesional.
-  </p>
-</section>
-
-<section class="keahlian with-image-bg" id="keahlian">
-  <h2 class="judul-section teks-neon">Keahlian</h2>
-  <ul class="list-keahlian">
-    <li><i class="icon">💻</i> HTML, CSS, JavaScript</li>
-    <li><i class="icon">🤝</i> Kerja Sama Tim — <span class="tebal">Itu Sudah Pasti!</span></li>
-    <li><i class="icon">⚡</i> Aliran/Sambungan Listrik berbasis Computing</li>
-    <li><i class="icon">🧠</i> Siap bekerja juga di bidang <span class="highlight">non-Computing</span></li>
-  </ul>
-</section>
-
-
-
-
-  <section class="projects" id="proyek" data-aos="zoom-in-up">
-  <h2>My Experience/
-    Pengalaman Saya</h2>
-</section>
-
-  <div class="proyek-foto-gallery">
-    <div class="foto-item">
-      <img src="presenter metrotv.jpg" alt="Proyek 1">
-    </div>
-    <div class="foto-item">
-      <img src="ilkom.jpg" alt="Proyek 2">
-    </div>
-    <div class="foto-item">
-      <img src="rezaarap.jpg" alt="Proyek 3">
-    </div>
-  </div>
-</section>
-
-  <section class="kontak" id="kontak" data-aos="fade-up">
-    <h2>Kontak Saya</h2>
-    <div class="kontak-info">
-      <img src="email.png" alt="Email">
-      <span>Wanz4708@gmail.com</span>
-    </div>
-    <div class="kontak-info">
-      <img src="logo instagram.jpg" alt="Instagram">
-      <span>Wannyourchoice_</span>
-    </div>
-    <div class="kontak-info">
-      <img src="whatsapp.png" alt="WhatsApp">
-      <span>085945752940</span>
+  <section class="hero" id="beranda">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="ikhwan.jpeg" alt="Foto Profil">
+      </div>
+      <h1>Halo, Saya <span class="nama-animasi">Ikhwan Ashshafa</span></h1>
+      <p>Mahasiswa | Web Developer | UI/UX Designer | Freelancer</p>
+      <a href="#kontak" class="btn">Hubungi Saya</a>
     </div>
   </section>
 
+  <section class="tentang" id="tentang">
+    <h2 class="judul-section">Tentang Saya</h2>
+    <p>Saya adalah seseorang yang selalu mengedepankan karya. Seorang Freelancer Website & Database yang ingin bergabung dengan perusahaan untuk mendapatkan penghasilan tetap dan berkembang bersama tim profesional.</p>
+  </section>
+
+  <section class="keahlian with-image-bg" id="keahlian">
+    <h2 class="judul-section">Keahlian</h2>
+    <ul class="list-keahlian">
+      <li><i class="icon">💻</i> HTML, CSS, JavaScript</li>
+      <li><i class="icon">🤝</i> Kerja Sama Tim — Itu Sudah Pasti!</li>
+      <li><i class="icon">⚡</i> Aliran/Sambungan Listrik berbasis Computing</li>
+      <li><i class="icon">🧠</i> Siap bekerja juga di bidang non-Computing</li>
+    </ul>
+  </section>
+
   <footer>
-    <p>&copy; 2025 IkhwanProjectYeaa:. All rights reserved.</p>
+    <p>&copy; 2025 IkhwanProjectYeaa. All rights reserved.</p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true,
-  });
-</script>
-
   <script>
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll("nav ul li a");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 110;
-      if (pageYOffset >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active");
-      }
-    });
-  });
-</script>
-
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
-</html> 
+</html>
