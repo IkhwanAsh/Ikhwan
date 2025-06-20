@@ -522,6 +522,40 @@ section {
   }
 }
 
+    .with-image-bg {
+  background-image: url('img/keahlian.jpg'); /* Ganti path sesuai gambar kamu */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+}
+
+.with-image-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Lapisan gelap agar teks tetap terbaca */
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/* Pastikan isi tetap terbaca */
+.with-image-bg .judul-section,
+.with-image-bg .list-keahlian,
+.with-image-bg .highlight,
+.with-image-bg .tebal {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+
   color: #0077b6;
 }
 
