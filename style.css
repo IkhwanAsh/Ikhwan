@@ -523,7 +523,7 @@ section {
 }
 
     .with-image-bg {
-  background-image: url('img/keahlian.jpg'); /* Ganti path sesuai gambar kamu */
+  background-image: url('wpbg.jpg'); /* Ganti path sesuai gambar kamu */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
