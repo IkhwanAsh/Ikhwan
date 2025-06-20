@@ -7,7 +7,7 @@
 body {
   background-color: #0e0e0e;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
+  color: transparent;
   margin: 0;
   padding: 0;
 }
@@ -18,7 +18,7 @@ body {
   justify-content: center; /* pusatkan horizontal */
   align-items: center;
   padding: 15px 20px;
-  background-color: rgb(121, 57, 4);
+  background-color: transparent;
   color: white;
   position: sticky;
   top: 0;
@@ -429,8 +429,8 @@ section {
 
     .tentang, .keahlian {
   padding: 40px 20px;
-  background-color: #111;
-  color: #eee;
+  background-color: transparent;
+  color: transparent;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin: 30px auto;
@@ -439,7 +439,7 @@ section {
 
 .judul-section {
   font-size: 2.5em;
-  color: #4a00e0;
+  color: transparent;
   background: linear-gradient(to right, #8e2de2, #4a00e0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -450,12 +450,12 @@ section {
 .isi-section {
   font-size: 1.2em;
   line-height: 1.8;
-  color: #ccc;
+  color: transparent;
   text-align: justify;
 }
 
 .highlight {
-  color: #ff4dff;
+  color:transparent;
   font-weight: bold;
 }
 
@@ -475,19 +475,19 @@ section {
 
 .list-keahlian li:hover {
   transform: scale(1.02);
-  color: #00f7ff;
+  color: transparent;
 }
 
     .icon {
   margin-right: 10px;
   font-size: 1.2em;
-  color: #0ff;
+  color: transparent;
 }
 
 
 .tebal {
   font-weight: bold;
-  color: #ffd700;
+  color: transparent;
 }
   .teks-neon {
   font-size: 2.2em;
