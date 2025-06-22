@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ketupat Sayur - UMI CATERING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #fdf6f0);
+      color: #333;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image-section {
+      flex: 1 1 480px;
+      background: #fff5f5;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-section img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transition: transform 0.4s ease;
+    }
+
+    .image-section img:hover {
+      transform: scale(1.05);
+    }
+
+    .content-section {
+      flex: 1 1 500px;
+      padding: 3rem 2.5rem;
+    }
+
+    .content-section h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: #d81b60;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .price {
+      font-size: 1.6rem;
+      color: #2e7d32;
+      font-weight: bold;
+      margin-bottom: 1.4rem;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      color: #555;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.9rem 2rem;
+      background-color: #d81b60;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #b71c1c;
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .image-section, .content-section {
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .content-section h1 {
+        font-size: 2.2rem;
+      }
+
+      .back-button {
+        margin: 2rem auto 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-section">
+      <img src="ketupat sayur2.jpg" alt="Ketupat Sayur">
+    </div>
+    <div class="content-section">
+      <h1>Ketupat Sayur Istimewa</h1>
+      <p class="price">ORDER NOW !</p>
+      <p class="price"></p>
+      <p class="description">
+        Nikmati <strong>Ketupat Sayur khas UMI CATERING</strong> — racikan bumbu rempah pilihan, berpadu dengan ketupat lembut, sayur labu bersantan gurih, dan lauk pelengkap seperti tahu goreng, tempe, serta kerupuk merah yang renyah. Cocok untuk sarapan spesial, hajatan, pengajian, dan momen keluarga lainnya. <br><br>
+        Disajikan dengan <em>cita rasa rumahan yang mewah</em>, setiap suapan membawa kehangatan dan nostalgia khas lebaran.
+      </p>
+      <a href="index.html" class="back-button">← Kembali ke Menu</a>
+    </div>
+  </div>
+
+</body>
+</html>
