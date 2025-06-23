@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasi Box - UMI CATERING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fff0f5, #fce4ec);
+      color: #333;
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image-section {
+      flex: 1 1 480px;
+      background-color: #fff0f0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-wrapper {
+  position: relative;
+  max-width: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  animation: float 2s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.image-wrapper::before, .image-wrapper::after {
+  content: '';
+  position: absolute;
+  border: 3px solid #e91e63; /* Warna frame pink terang */
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  z-index: 2;
+  animation: draw-frame 2s linear forwards;
+}
+
+.image-wrapper::after {
+  border-color: #ff80ab; /* Gradasi pink muda */
+  animation-delay: 0.5s;
+}
+
+/* Keyframes untuk menggambar garis kotak */
+@keyframes draw-frame {
+  0% {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+  25% {
+    clip-path: inset(0 100% 100% 100%);
+  }
+  50% {
+    clip-path: inset(0 0 100% 100%);
+  }
+  75% {
+    clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+    .image-wrapper:hover {
+      transform: scale(1.06) rotate(1deg);
+    }
+
+    .image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(255, 105, 180, 0.5), 0 0 28px rgba(255, 192, 203, 0.3);
+}
+    .image-shadow {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      height: 20px;
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, transparent 80%);
+      filter: blur(4px);
+      z-index: -1;
+    }
+
+    .text-section {
+      flex: 1 1 500px;
+      padding: 3rem 2.5rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      color: #c2185b;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      color: #2e7d32;
+      font-weight: bold;
+      margin-bottom: 1.2rem;
+    }
+
+    .description {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #c2185b;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      font-weight: bold;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #ad1457;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .text-section, .image-section {
+        padding: 1.5rem;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .price, .description {
+        text-align: center;
+      }
+
+      .back-btn {
+        margin: 1.5rem auto 0;
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-section">
+      <div class="image-wrapper">
+        <img src="paket nasi box2.jpg" alt="Nasi Box">
+        <div class="image-shadow"></div>
+      </div>
+    </div>
+    <div class="text-section">
+      <h1>Nasi Box Spesial</h1>
+      <a href="https://wa.me/6285945752940?text=Halo%20saya%20tertarik%20dengan%20Gudeg%20Besek%20UMI%20Catering" class="order-btn">KLIK DAN ORDER SEKARANG</a>
+      <p class="description">
+        Sajian lengkap yang menggoda! Nasi box spesial dari UMI CATERING hadir dengan <strong>nasi putih pulen</strong>, <strong>ayam goreng kremes</strong> yang gurih, <strong>sambal khas</strong>, <strong>lalapan segar</strong>, dan <strong>kerupuk renyah</strong>. Cocok untuk arisan, acara kantor, pengajian, maupun bekal makan siang. Diproses secara higienis dan siap antar untuk berbagai acara penting Anda.
+      </p>
+      <a href="index.html" class="back-btn">← Kembali ke Menu</a>
+    </div>
+  </div>
+
+</body>
+</html>
