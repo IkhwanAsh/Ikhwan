@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Ketupat Sayur - UMI CATERING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fffaf5, #fbe9e7);
+      color: #333;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header {
+      background-color: #d81b60;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .btn-back {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background-color: #6c757d;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+
+    .btn-back:hover {
+      background-color: #5a6268;
+    }
+
+    footer {
+      background-color: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Galeri Ketupat Sayur</h1>
+    <p>Kumpulan foto ketupat sayur khas UMI CATERING</p>
+  </header>
+
+  <div class="container">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="galeri-ketupat1.jpg" alt="Ketupat Sayur 1">
+      </div>
+      <div class="gallery-item">
+        <img src="galeri-ketupat2.jpg" alt="Ketupat Sayur 2">
+      </div>
+      <div class="gallery-item">
+        <img src="galeri-ketupat3.jpg" alt="Ketupat Sayur 3">
+      </div>
+      <div class="gallery-item">
+        <img src="galeri-ketupat4.jpg" alt="Ketupat Sayur 4">
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="ketupat-sayur.html" class="btn-back">← Kembali ke Ketupat Sayur</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 UMI CATERING | Galeri Ketupat Sayur</p>
+  </footer>
+
+</body>
+</html>
