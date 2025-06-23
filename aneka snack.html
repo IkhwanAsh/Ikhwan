@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aneka Snack - UMI CATERING</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fff4e6, #ffe8cc);
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6f61;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .snack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .snack-card {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .snack-card:hover {
+      transform: scale(1.03);
+    }
+
+    .snack-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .snack-card .info {
+      padding: 15px;
+    }
+
+    .snack-card .info h4 {
+      margin: 0;
+      font-size: 18px;
+      color: #ff6f61;
+    }
+
+    .snack-card .info p {
+      font-size: 14px;
+      margin-top: 8px;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff6f61;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ANEKA SNACK</h1>
+    <p>Pilihan snack lezat dari UMI CATERING</p>
+  </header>
+
+  <div class="container">
+    <div class="snack-grid">
+      <div class="snack-card">
+        <img src="aneka snack1.jpg" alt="Snack Box A" />
+        <div class="info">
+          <h4>Snack Box A</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="snack-card">
+        <img src="aneka snack2.jpg" alt="Snack Box B" />
+        <div class="info">
+          <h4>Snack Box B</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="snack-card">
+        <img src="aneka snack3.jpg" alt="Snack Tradisional" />
+        <div class="info">
+          <h4>Snack Box C</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="snack-card">
+        <img src="aneka snack4.jpg" alt="Snack Modern" />
+        <div class="info">
+          <h4>Snack Box D</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 UMI CATERING | Aneka Snack untuk segala acara</p>
+  </footer>
+</body>
+</html>
