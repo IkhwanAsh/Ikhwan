@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gudeg - UMI CATERING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fff7e6, #ffeabf);
+      color: #3a2c14;
+    }
+
+    header {
+      background-image: url('gudeg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .menu-card {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: scale(1.015);
+    }
+
+    .menu-card img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      object-fit: cover;
+      flex: 1 1 450px;
+    }
+
+    .menu-info {
+      flex: 1 1 450px;
+      padding: 25px;
+    }
+
+    .menu-info h2 {
+      margin-top: 0;
+      color: #b85b1d;
+      font-size: 22px;
+    }
+
+    .menu-info p {
+      font-size: 16px;
+      color: #5a4b30;
+      line-height: 1.7;
+    }
+
+    .button-group {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #d2691e;
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #a8430e;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+    }
+
+    .btn-secondary:hover {
+      background-color: #555b61;
+    }
+
+    .btn-download {
+      background-color: #007bff;
+    }
+
+    .btn-download:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #3a2c14;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .btn {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GUDEG SPESIAL</h1>
+    <p>Lezatnya Cita Rasa Jawa yang Bikin Rindu</p>
+  </header>
+
+  <div class="container">
+    <div class="menu-card">
+      <img src="gudeg.jpg" alt="Gudeg Komplit UMI Catering" />
+      <div class="menu-info">
+        <h2>Gudeg Komplit</h2>
+        <p>
+          Sajian khas Yogyakarta yang manis dan gurih, terdiri dari gudeg nangka muda, sambal krecek, telur pindang, tahu bacem, dan ayam kampung opor. Dihidangkan dengan nasi hangat dan pelengkap khas Jawa.
+        </p>
+        <p><strong>Harga:</strong> Mulai dari Rp25.000/porsi</p>
+        <div class="button-group">
+          <a href="https://wa.me/6285945752940?text=Halo%2C%20saya%20ingin%20pesan%20Gudeg%20Komplit%20UMI%20Catering" class="btn">Pesan Sekarang</a>
+          <a href="galeri-gudeg.html" class="btn btn-secondary">Lihat Galeri Foto</a>
+          <a href="menu-gudeg.pdf" class="btn btn-download" download>Download Menu (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="gudeg2.jpeg" alt="Gudeg Besek Tradisional" />
+      <div class="menu-info">
+        <h2>Gudeg Besek Tradisional</h2>
+        <p>
+          Dibalut dalam besek bambu klasik, cocok untuk syukuran, hajatan, atau hantaran. Isiannya komplit dengan cita rasa khas, tampilan estetik & autentik dari Jawa Tengah.
+        </p>
+        <p><strong>Harga:</strong> Mulai dari Rp30.000/paket</p>
+        <div class="button-group">
+          <a href="https://wa.me/6285945752940?text=Halo%2C%20saya%20tertarik%20dengan%20Gudeg%20Besek%20Tradisional%20UMI%20Catering" class="btn">Pesan Sekarang</a>
+          <a href="galeri-gudeg.html" class="btn btn-secondary">Lihat Galeri Foto</a>
+          <a href="menu-gudeg.pdf" class="btn btn-download" download>Download Menu (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="index.html" class="btn btn-secondary">← Kembali ke Beranda</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 UMI CATERING | Gudeg Asli Yogyakarta, Rasa yang Tak Terlupakan</p>
+  </footer>
+
+</body>
+</html>
