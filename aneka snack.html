@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aneka Snack - UMI CATERING</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fff4e6, #ffe8cc);
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6f61;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .snack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .snack-card {
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .snack-card:hover {
+      transform: scale(1.03);
+    }
+
+    .snack-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .snack-card .info {
+      padding: 15px;
+    }
+
+    .snack-card .info h4 {
+      margin: 0;
+      font-size: 18px;
+      color: #ff6f61;
+    }
+
+    .snack-card .info p {
+      font-size: 14px;
+      margin-top: 8px;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff6f61;
+      color: white;
+      margin-top: 40px;
+    }
+
+  .button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: #28a745; 
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #ff5722, #e91e63);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #e91e63, #ff5722);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: #f0f0f0;
+  color: #333;
+  border: 2px solid #ccc;
+}
+
+.btn-secondary:hover {
+  background: #ddd;
+  transform: scale(1.05);
+}
+
+.btn-download {
+  background: #4caf50;
+  color: #fff;
+}
+
+.btn-download:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+.btn-daun {
+    background-color: #4CAF50; /* hijau daun */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50% 20% / 30% 70%; /* bentuk elips seperti daun */
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .btn-daun:hover {
+    background-color: #388E3C;
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ANEKA SNACK</h1>
+    <p>Pilihan snack lezat dari UMI CATERING</p>
+  </header>
+
+  <div class="container">
+    <div class="snack-grid">
+      <div class="snack-card">
+        <img src="aneka snack1.jpg" alt="Snack Box A" />
+        <div class="info">
+          <h4>Snack Box A</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="button-group">
+          <a href="https://wa.me/6285945752940?text=Halo%2C%20saya%20tertarik%20dengan%20Aneka%20Snack%20A%20UMI%20Catering" class="btn-daun">🍃 Pesan Sekarang</a>
+          <a href="galeri-gudeg.html" class="btn btn-secondary">Lihat Galeri Foto</a>
+          <a href="menu-gudeg.pdf" class="btn btn-download" download>Download Menu (PDF)</a>
+        </div>
+
+      <div class="snack-card">
+        <img src="aneka snack2.jpg" alt="Snack Box B" />
+        <div class="info">
+          <h4>Snack Box B</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="button-group">
+          <a href="https://wa.me/6285945752940?text=Halo%2C%20saya%20tertarik%20dengan%20Aneka%20Snack%20B%20UMI%20Catering" class="btn-daun">🍃>Pesan Sekarang</a>
+          <a href="galeri-gudeg.html" class="btn btn-secondary">Lihat Galeri Foto</a>
+          <a href="menu-gudeg.pdf" class="btn btn-download" download>Download Menu (PDF)</a>
+        </div>
+
+      <div class="snack-card">
+        <img src="aneka snack3.jpg" alt="Snack Tradisional" />
+        <div class="info">
+          <h4>Snack Box C</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="button-group">
+          <a href="https://wa.me/6285945752940?text=Halo%2C%20saya%20tertarik%20dengan%20Snack%20Tradisional%20Umi%20Catering" class="btn-daun">🍃>Pesan Sekarang</a>
+          <a href="galeri-gudeg.html" class="btn btn-secondary">Lihat Galeri Foto</a>
+          <a href="menu-gudeg.pdf" class="btn btn-download" download>Download Menu (PDF)</a>
+        </div>
+
+      <div class="snack-card">
+        <img src="aneka snack4.jpg" alt="Snack Modern" />
+        <div class="info">
+          <h4>Snack Box D</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="button-group">
+          <a href="https://wa.me/6285945752940?text=Halo%2C%20saya%20tertarik%20dengan%20Aneka%20Snack%20D%20UMI%20Catering" class="btn-daun">🍃>Pesan Sekarang</a>
+          <a href="galeri-gudeg.html" class="btn btn-secondary">Lihat Galeri Foto</a>
+          <a href="menu-gudeg.pdf" class="btn btn-download" download>Download Menu (PDF)</a>
+        </div>
+        <a href="index.html" class="btn btn-secondary">← Kembali ke Beranda</a>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 UMI CATERING | Aneka Snack untuk segala acara</p>
+  </footer>
+</body>
+</html>
