@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ketupat Sayur - UMI CATERING</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fff4e6, #fff0f0);
+      color: #333;
+    }
+
+    header {
+      background-image: url('ketupat sayur2.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .menu-card {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: scale(1.015);
+    }
+
+    .menu-card img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      object-fit: cover;
+      flex: 1 1 450px;
+    }
+
+    .menu-info {
+      flex: 1 1 450px;
+      padding: 25px;
+    }
+
+    .menu-info h2 {
+      margin-top: 0;
+      color: #c2185b;
+      font-size: 24px;
+    }
+
+    .menu-info p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .button-group {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background-color: #d81b60;
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #b71c1c;
+    }
+
+    /* -------------  WRAPPER  ------------- */
+.btn-wrapper {
+  /* letakkan semua anak di tengah halaman atau kolom parent */
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* pastikan sejajar tengah horizontals */
+  gap: 12px;             /* jarak antara ketupat & stack tombol kecil */
+}
+
+/* -------------  STACK tombol kecil ------------- */
+.btn-stack {
+  display: flex;
+  flex-direction: column; /* tumpuk vertikal */
+  gap: 8px;               /* jarak antar tombol kecil */
+  width: max-content;     /* lebarnya mengikuti tombol terlebar */
+}
+
+/* -------------  TOMBOL KETUPAT  (sudah ada sebelumnya) ------------- */
+.btn-ketupat {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url('warna ketupat.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #88a850;
+  transform: rotate(45deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+  transition: transform .2s ease;
+  text-decoration: none;
+}
+.btn-ketupat span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg); /* biar teks tetap horizontal */
+  color: white;
+  font-size: 13px;           /* sedikit lebih kecil juga */
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  text-align: center;
+  padding: 4px;
+}
+
+.btn-ketupat:hover { transform: rotate(45deg) scale(1.05); }
+
+/* -------------  TOMBOL KECIL  (galeri & download) ------------- */
+.btn-galeri,
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;           /* pendek & seragam */
+  padding: 4px 12px;
+  font: 600 13px/1 'Poppins', sans-serif;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,.1);
+  transition: all .2s ease-in-out;
+}
+
+/* warna galeri (hijau) */
+.btn-galeri {
+  background: linear-gradient(to right,#6ab04c,#badc58);
+}
+.btn-galeri:hover {
+  background: linear-gradient(to right,#58b368,#a4de02);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 10px rgba(0,0,0,.15);
+}
+
+/* warna download (biru) */
+.btn-download {
+  background: linear-gradient(to right,#4b7bec,#45aaf2);
+}
+.btn-download:hover {
+  background: linear-gradient(to right,#3867d6,#0fb9b1);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 10px rgba(0,0,0,.15);
+}
+
+.footer-umi {
+  background: linear-gradient(to right, #4e342e, #6d4c41); /* nuansa coklat hangat */
+  color: #fbe9e7;  /* krem terang */
+  padding: 16px 24px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  position: relative;
+  margin-top: 40px;
+  border-top: 2px solid #d7ccc8;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-umi p {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.footer-umi strong {
+  color: #ffcc80; /* kuning hangat */
+  font-weight: 700;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KETUPAT SAYUR ISTIMEWA</h1>
+    <p>Rasa Rempah Tradisional yang Menghangatkan</p>
+  </header>
+
+  <div class="container">
+    <div class="menu-card">
+      <img src="ketupat sayur2.jpg" alt="Ketupat Sayur UMI Catering" />
+      <div class="menu-info">
+        <h2>Ketupat Sayur UMI</h2>
+        <p>
+          Perpaduan sempurna antara ketupat lembut dan sayur labu bersantan khas rumahan. Disajikan bersama lauk tempe, tahu, kerupuk merah, dan sambal pedas manis yang menggoda. Cocok untuk acara keluarga, pengajian, syukuran, dan menu sarapan sehat.
+        </p>
+        <p><strong>Harga:</strong> Mulai dari Rp15.000/porsi</p>
+        <div class="btn-wrapper"></div>
+          <a href="https://wa.me/6285945752940?text=Halo%2C%20saya%20ingin%20pesan%20Ketupat%20Sayur%20UMI%20Catering"
+     class="btn-ketupat">
+    <span>Pesan Sekarang</span>
+  </a>
+      <div class="btn-stack">
+    <a href="galeri-ketupat.html" class="btn-galeri">Lihat Galeri</a>
+    <a href="menu-ketupat.pdf" class="btn-download" download>Download Menu (PDF)</a>
+  </div>
+
+</div>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="index.html" class="btn btn-secondary">← Kembali ke Beranda</a>
+    </div>
+  </div>
+
+  <footer class="footer-umi">
+  <div class="footer-content">
+    <p>© 2025 <strong>UMI CATERING</strong> | Cita Rasa Nusantara 🍽️</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
