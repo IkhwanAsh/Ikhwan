@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pecel Ayam - UMI CATERING</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('ayam.jpg'); /* ganti dengan gambar latar dapur */
+      background-size: cover;
+      background-position: center;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .menu-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      text-align: center;
+      color: #b74b1f;
+      margin-bottom: 10px;
+    }
+
+    .menu-image {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      border: 5px solid #f4e2d8;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .button-group {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn-order {
+      background-color: #d84315;
+      color: white;
+    }
+
+    .btn-order:hover {
+      background-color: #bf360c;
+    }
+
+    .btn-back {
+      background-color: #eee;
+      color: #333;
+    }
+
+    .btn-back:hover {
+      background-color: #ccc;
+    }
+
+    .btn-ayam-goreng {
+  display: inline-block;
+  background-image: url('tombol ayam goreng.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 80px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50%;
+  border: 3px solid #d2691e;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.btn-ayam-goreng span {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 12px;
+  border-radius: 12px;
+}
+
+.btn-ayam-goreng:hover {
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="menu-title">Pecel Ayam Tradisional</h1>
+    <img src="pecel ayam.jpg" alt="Pecel Ayam" class="menu-image">
+
+    <div class="description">
+      <p><strong>Pecel Ayam UMI Catering</strong> menghadirkan cita rasa rumahan khas Jawa, lengkap dengan sambal terasi pedas, lalapan segar, dan nasi hangat. Ayam digoreng dengan bumbu rempah tradisional yang meresap hingga ke dalam, cocok untuk makan siang atau acara keluarga.</p>
+      <p>🌶 Tingkat kepedasan bisa disesuaikan<br>🍽 Cocok untuk katering harian dan event<br>📦 Tersedia dalam bentuk nasi box</p>
+    </div>
+
+    <div class="button-group">
+      <a href="https://wa.me/6285945752940?text=Halo%2C%20saya%20tertarik%20dengan%20Pecel%20Ayam%20UMI%20Catering" class="btn-ayam-goreng">
+  <span>🍗 Pesan Sekarang</span>
+</a>
+
+      <a href="index.html" class="btn btn-back">Kembali ke Menu</a>
+    </div>
+  </div>
+</body>
+</html>
